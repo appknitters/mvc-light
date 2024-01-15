@@ -1,0 +1,17 @@
+{
+    "name": "appknitters/mvc-light",
+    "description": "A Light weight minimal mvc-framework",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Toseef Sadiq",
+            "email": "mr.toseef@gmail.com"
+        }
+    ],
+    "require": {}
+}
