@@ -13,6 +13,11 @@ namespace app\core;
  * @author toseef
  */
 class Controller {
+    public string $layout = 'main';
+    public function setLayout($layout){
+        Application::$app->controller->layout = $layout;
+    }
+    
     public function render($view,$params=[]) {
         return \app\core\Application::$app->router->renderView($view,$params);
     }

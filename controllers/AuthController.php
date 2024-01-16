@@ -17,10 +17,12 @@ class AuthController extends Controller{
     //put your code here
     
     public function login() {
+        $this->setLayout('auth');
         return $this->render('login');
     }
     
     public function register(Request $request) {
+        $this->setLayout('auth');
         if($request->isPost()){
             return 'Handle submitted data';
         }
